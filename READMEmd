@@ -1,0 +1,86 @@
+# Hangman Game
+
+## Table of Contents
+
+1. [Description](#description)
+2. [Installation Instructions](#installation-instructions)
+3. [Usage Instructions](#usage-instructions)
+4. [File Structure](#file-structure)
+5. [License](#license)
+
+---
+
+## Description
+
+The **Hangman Game** is a beginner-friendly Python project that demonstrates how to:
+
+- Use classes to encapsulate game logic.
+- Handle user input validation.
+- Implement a simple game loop with winning and losing conditions.
+
+### What It Does
+
+- Initializes the game with a word ("pearl") to be guessed.
+- Prompts the user to guess one letter at a time.
+- Validates the input to ensure it is a single alphabetical character.
+- Updates the game state based on correct or incorrect guesses.
+- Ends the game when the word is fully guessed or the player runs out of lives.
+
+### Aim of the Project
+
+The aim of this project is to:
+
+- Practice Python programming concepts such as classes, loops, and input validation.
+- Understand modular programming by splitting functionality into reusable methods.
+- Build a simple yet engaging console-based game.
+
+### What I Learned
+
+- How to use classes and methods effectively to structure a project.
+- Input validation techniques for interactive programs.
+- How to build a game loop with user-defined end conditions.
+
+---
+
+## Installation Instructions
+
+1. Ensure you have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
+2. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/hangman-game.git
+   ```
+3. Navigate to the project directory:
+   ```bash
+   cd hangman-game
+   ```
+
+---
+
+## Usage Instructions
+
+1. Run the `milestone_4.py` script:
+   ```bash
+   python milestone_4.py
+   ```
+2. Follow the prompts to guess letters in the word "pearl".
+3. Keep guessing until:
+   - You guess all the letters correctly and win, or
+   - You run out of lives and lose the game.
+
+---
+
+## File Structure
+
+```plaintext
+hangman-game/
+├── milestone_4.py      # Hangman Game script
+├── README.md           # Documentation for the game
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this code, provided appropriate credit is given.
+
+---
