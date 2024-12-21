@@ -3,26 +3,13 @@ import random
 class Hangman:
 
     def __init__(self, word, num_lives=5):
-        """
-        Initializes the attributes for the Hangman game.
-
-        Parameters:
-        - word (str): The word to guess.
-        - num_lives (int): The number of lives the player has. Default is 5.
-        """
         self.word = word
         self.num_lives = num_lives
-        self.word_guessed = ['_' for _ in self.word]  # Initialize with underscores
-        self.num_letters = len(set(self.word))  # Count of unique letters to guess
-        self.list_of_guesses = []  # Keep track of guessed letters
+        self.word_guessed = ['_' for _ in self.word]  
+        self.num_letters = len(set(self.word))  
+        self.list_of_guesses = []  
 
     def guess_letter(self, letter):
-        """
-        Handles the user's guess.
-
-        Parameters:
-        - letter (str): The letter guessed by the user.
-        """
         if letter in self.list_of_guesses:
             print(f"You already guessed '{letter}'. Try a different letter.")
             return
@@ -43,12 +30,6 @@ class Hangman:
             print(f"Current word: {' '.join(self.word_guessed)}")
 
 def play_game(word_list):
-    """
-    Starts the Hangman game with the given word list.
-
-    Parameters:
-    - word_list (list): List of words for the game.
-    """
     num_lives = 5
     game = Hangman("pearl", num_lives)
 
